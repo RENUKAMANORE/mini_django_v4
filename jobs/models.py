@@ -11,6 +11,9 @@ class Portal(models.Model):
     def launch(self):
         self.save()
 
+    def __str__(self):
+        return self.name + "  " + self.description
+
 class Title(models.Model):
     roll_no = models.CharField(max_length=250)
     last_updated = models.DateTimeField(default=timezone.now())

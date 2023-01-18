@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import welcome
+from .views import welcome,portal_details
 
 urlpatterns = [
-    path("",welcome)
+    path("",welcome),
+    path("portal/",portal_details)
 
 ]
